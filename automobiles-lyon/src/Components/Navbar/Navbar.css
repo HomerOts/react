@@ -1,0 +1,28 @@
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 5px;
+    align-items: center;
+
+}
+
+header img{
+    height: 40px;
+    width: 120px;
+}
+nav{
+    flex-flow: row wrap;
+}
+
+nav a{
+    padding-left: 10px;
+
+}
+.phone{
+    padding-right: 10px;
+    margin-right: 10px;
+}
