@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 
 header{
@@ -7,22 +8,34 @@ header{
     width: 100%;
     padding-left: 5px;
     align-items: center;
+    background-color: rgb(146, 146, 146);
+    font-family: 'Lora', serif;
 
 }
 
 header img{
-    height: 40px;
-    width: 120px;
+    padding-left: 20px;
+    height: 60px;
+    width: 170px;
 }
 nav{
     flex-flow: row wrap;
 }
 
-nav a{
+nav a,a{
     padding-left: 10px;
+    color: white;
+    list-style: none;
+    text-decoration: none;
 
 }
 .phone{
     padding-right: 10px;
     margin-right: 10px;
+}
+
+a:hover{
+    scale: 1.1;
+    transition: 1.5s;
+    color: black;
 }

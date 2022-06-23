@@ -1,7 +1,8 @@
 import React from "react";
-import logo from '../../imgs/Recurso 1.png'
-import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
-import './Navbar.css'
+import logo from '../../imgs/Recurso 1.png';
+import './Navbar.css';
+import './CartWidget';
+import CartWidget from "./CartWidget";
 
 const Navbar = () => {
     return (
@@ -12,11 +13,9 @@ const Navbar = () => {
                 <a href="">Usados</a>
                 <a href="">Convencionales</a>
                 <a href="">Plan de Ahorro</a>
-        
             </nav>
-            <div class="phone" >
-            <ContactPhoneIcon fontSize="large" />
-            </div>
+          <a href="#!"> <CartWidget/>
+          </a>
         </header>
     );
 }
