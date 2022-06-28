@@ -1,0 +1,28 @@
+
+
+
+.carrito{
+    padding-right: 20px;
+    text-align: right;
+    align-content: center;
+    align-items: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+   
+   
+}
+
+
+
+
+.botones{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    align-items: center; 
+}
+.botones div{
+    padding-left: 20px;
+    padding-right: 10px;
+}
