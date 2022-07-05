@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from "react";
-import {products}  from './Item';
+import {products} from './ItemListContainer/ItemListContainer'
 import './ItemList.css'
 
 
