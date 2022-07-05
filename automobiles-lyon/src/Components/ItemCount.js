@@ -23,12 +23,12 @@ export const MiCarrito = () => {
         <section class="carrito">
             <h3> Mi Carrito </h3>
             <div class="botones">
+            <div> <button onClick={restarProducto}> - </button> </div>
                
-               <div> <button onClick={sumarProducto}> + </button></div>
                 <p>
                     {contador}
                 </p>
-                <div> <button onClick={restarProducto}> - </button> </div>
+                <div> <button onClick={sumarProducto}> + </button></div>
 
             </div>
             <div>  <button onClick={resetProductos}> Agregar productos </button></div>
