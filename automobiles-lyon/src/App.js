@@ -2,15 +2,17 @@ import React from 'react';
 import logo from './logo.svg';
 import Navbar from './Components/Navbar/Navbar';
 import './App.css';
-import ItemList from './Components/ItemListContainer/ItemListContainer';
+import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 import { MiCarrito } from './Components/ItemCount';
+import { products } from './Components/Item';
 
 const App = () => {
   return (
     <div>
     <Navbar />
-    <ItemList/>
     <MiCarrito/>
+    <ItemListContainer/>
+
     </div>
   );
 }

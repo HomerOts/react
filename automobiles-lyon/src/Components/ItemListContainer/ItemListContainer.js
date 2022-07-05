@@ -1,29 +1,40 @@
 import React, {useState,useEffect} from "react";
 import './ItemListContainer.css';
-import '../ItemList';
-import '../Item';
+import ItemList from "../ItemList";
+import {products} from '../Item';
 
 
-const ItemListContainer = ()=> {
+
+
 
 const promesa = new Promise ((result,reject) =>{
+    setInterval(()=>{
+        result(products)
+    }, 2000);
 
-setTimeout(()=>{
-    result(products)
-}, 4000);
+})
 
-const [productos,setProductos] = useState ([]);
+const ItemListContainer = ()=> {
+   
+    const [productos,setProductos] = useState([])
+
 useEffect(()=>{
     promesa.then((data)=>{
         setProductos(data)
     })
-})
+    .catch(() =>{
+        console.log ('No hay veh{iculos disponibles')
+    }
+    )
+}, []);
 
-})
 
+return(
+    <>
+    <ItemList/>
+    </>
+)
 }
-
-
 
 
 export default ItemListContainer;

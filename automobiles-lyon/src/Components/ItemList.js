@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from "react";
-
+import {products}  from './Item';
 
 
 
@@ -8,10 +8,11 @@ const ItemList = () => {
     return(
         <>
         <h2> Nuestros vehículos</h2>
-        {products.map((product)=> <div key={product.id}> <p> {product.name} </p> 
-        <p> {product.img} </p> 
-        <p> {product.model} </p> 
-        <p> {product.price} </p> 
+        {products.map((products)=> <div key={products.id}>
+        <p> {products.name} </p> 
+        <p> {products.img} </p> 
+        <p> {products.color} </p> 
+        <p> {products.price} </p> 
         </div> )}
         </>
     )
