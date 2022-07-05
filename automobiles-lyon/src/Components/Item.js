@@ -1,8 +1,8 @@
 import React, {useState,useEffect} from "react";
-import xseries from '../imgs/XSERIES.png';
-import aircross from '../imgs/c5.png';
-import berlingo from '../imgs/berlingo multispace.png';
-import jumper from '../imgs/JUMPER.png';
+import xseries from './imgs/XSERIES.png';
+import aircross from './imgs/c5.png';
+import berlingo from './imgs/berlingo multispace.png';
+import jumper from './imgs/JUMPER.png';
 
 
 

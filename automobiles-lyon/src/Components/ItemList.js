@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from "react";
 import {products}  from './Item';
-
+import './ItemList.css'
 
 
 
@@ -8,12 +8,15 @@ const ItemList = () => {
     return(
         <>
         <h2> Nuestros vehículos</h2>
-        {products.map((products)=> <div key={products.id}>
+        <div class="productos">
+        {products.map((products)=> <div class="cuadros" key={products.id}>
         <p> {products.name} </p> 
-        <p> {products.img} </p> 
+        <img class="autos" src={products.img}/> 
         <p> {products.color} </p> 
         <p> {products.price} </p> 
+        <button>Agregar</button>
         </div> )}
+        </div>
         </>
     )
 }

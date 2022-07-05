@@ -1,0 +1,38 @@
+
+
+.productos{
+    display:flex;
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+
+}
+
+.autos{
+    width: 250px;
+    height: 200px;
+}
+
+
+.cuadros{
+    border: solid 2px black;
+    border-radius: 2%;
+    margin: 5px 5px 5px 5px;
+    padding: 10px 10px 10px 10px;
+}
+
+
+button{
+    color:white;
+    background-color: grey;
+    padding-top: 5px;
+    padding-bottom:5px;
+    border:black solid 1.5px;
+    border-radius: 2%;
+}
+
+button:hover{
+
+background-color:black;
+}
